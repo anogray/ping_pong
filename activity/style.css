@@ -10,16 +10,21 @@ html,body{
 body{
     /* height : 100vh;
     width : 100vw; */
-    background-image: url("./assets/space.gif");
+    background-image: url("/game/assets/space.gif");
     background-size: cover;
+    height: 100vh;
 }
-.padde{
+.paddle{
     border-radius:20px;
     position : fixed;
     height: 150px;
     width : 30px;
     background-color : red;
     border : 1px solid white;
+}
+#one
+{
+
 }
 #two{
 right:0px;
