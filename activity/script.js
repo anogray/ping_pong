@@ -39,13 +39,15 @@ let yd = true;
 function moveBall() {
     // top
     let bodyheight = body.clientHeight;
+
     let bodyWidth = body.clientWidth;
-    console.log(bodyheight);
     let ballTop = Number(ball.style.top.slice(0, -2));
+        console.log(ballTop);
+
     let ballLeft = Number(ball.style.left.slice(0, -2));
     let ballBottom = Number(ball.style.top.slice(0, -2)) + 100;
     let ballRight = Number(ball.style.left.slice(0, -2)) + 100;
-
+    
     if (ballTop == 0 || ballBottom == bodyheight) {
         yd = !yd
     }
@@ -55,9 +57,11 @@ function moveBall() {
     }
 
     ball.style.top=yd==true?(ballTop-1)+"px":(ballTop+1)+"px"
-
     ball.style.left=xd==true?(ballLeft-1)+"px":(ballLeft+1)+"px"
 
 
 }
+//moveBall();
+
+
 setInterval(moveBall, 1);
